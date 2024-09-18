@@ -4,11 +4,21 @@ Leetcode: Easy
 Time Complexity: O(n)
 Space Complexity: O(n)
 
-Solution: 
-
+Reasoning: 
 Perform a hashset function on the list to get rid of duplicates and compare
 sizes of the array before and after performing this operation. If the length differs
 then we know there is a duplicate that was removed
+
+NeetCode Solution:
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        hashset = set()
+
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
 
 '''
 

@@ -18,6 +18,9 @@ class Solution:
                 dict1[s[i]] = 1
 
         return dict1 == dict2
+    
+# EXPLAINATION:
+# Create two maps which allocate the occurances of each letters, then compare the maps
 
 # class Solution:
 #     def isAnagram(self, s: str, t: str) -> bool:
